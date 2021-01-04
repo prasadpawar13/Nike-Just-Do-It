@@ -1,0 +1,22 @@
+const background = document.querySelector(".background");
+const background1 = document.querySelector(".background1");
+const background2 = document.querySelector(".background2");
+const headline = document.querySelector(".headline");
+const shoe = document.querySelector(".shoe img"); 
+const heading = document.querySelector(".heading"); 
+const subheading = document.querySelector(".subheading"); 
+const headinginfo = document.querySelector(".headinginfo"); 
+const btn = document.querySelector("button");
+const logo = document.querySelector(".nike");
+const nav = document.querySelector(".nav");
+
+const tl = new TimelineMax();
+tl.fromTo(background1, 1, {y:"1000"}, {y:"0"});
+tl.fromTo(background2, 1, {y:"-100%"}, {y:"0%"},"");
+tl.fromTo(shoe, 1,  {height:"0%"}, {height:"80%"});
+tl.fromTo(heading, 1, {opacity:"0"}, {opacity:"1"},"+=0.5");
+tl.fromTo(subheading, 1, {opacity:"0"}, {opacity:"1"},"-=1");
+tl.fromTo(headinginfo, 1, {opacity:"0"}, {opacity:"1"},"-=1");
+tl.fromTo(btn, 1, {opacity:"0"}, {opacity:"1"});
+tl.fromTo(logo, 1, {opacity:"0"}, {opacity:"1"},"-=0.5");
+tl.fromTo(nav, 1, {opacity:"0"}, {opacity:"1"},"-=0.5");
